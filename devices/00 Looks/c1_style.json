@@ -1,0 +1,18 @@
+{
+  "collection": "C1",
+  "master_image": "C:\\Users\\38349\\Desktop\\01\\devices\\00 Looks\\c1_master-look.png",
+  "how_to_use": "Attach c1_master-look.png as IMAGE 1 in every C1 prompt and ask for the same photo session with only the listed changes. Add the device reference as IMAGE 2.",
+  "style": {
+    "backdrop": "Flat seamless light grey studio backdrop, even, clearly darker than the white screen. No clouds, no gradient, not white",
+    "lighting": "Soft, low-contrast backlight from one very large diffused source behind the set. No front key light. Gradual soft transitions on edges: no hard rim, no halo, no cut-out look. Shadows deep but natural",
+    "surface": "Brushed stainless steel desk top (Material 02): satin, fine brush lines left to right, soft muted reflection of the backdrop, no glare, no reflection of the screen. A shallow band across the bottom of the frame. Completely empty apart from the device",
+    "the_man": "The recurring character, seen from behind or cropped, on the left, out of focus, dark and quiet, never showing his face, never overlapping the screen. Thin titanium glasses, short dark textured hair, dark slate knit. He frames the device and never competes with it",
+    "device": "The only sharp object. Large in frame, facing the camera almost head-on, product-photography precision",
+    "screen": "MOCKUP SCREEN: flat matte pure white #FFFFFF corner to corner. No UI, no glow on the device, no light spill, no bloom, nothing overlapping it",
+    "camera": "85mm look, slightly above surface height, f/2.8 with focus on the screen",
+    "format": "Landscape 3:2",
+    "realism": "A real photograph: medium format digital, natural foreground blur, fine grain. Nothing airbrushed or composited",
+    "keyboard": "All keycaps plain and blank: smooth matte dark keys with no letters, numbers, symbols or icons. Correct layout and spacing. Never backlit"
+  },
+  "never": "Props or objects on the desk, orange accents, visible face, harsh rim light, white or cloudy backdrop, screen glow, high contrast, rigid symmetrical framing, desk details or corners on show, letters or symbols on keyboard keys"
+}
