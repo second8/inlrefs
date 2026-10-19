@@ -6657,6 +6657,19 @@
      "name": "Round 6",
      "note": "Behance camera settings (Flip Book halo, Randez-Vous glossy floor and shaped light, Gstaad close crops) plus the glass ideas Sam liked: glossy floor reflection, seated halo with invitation, bag over face, prism with bag, hang tag in slatted light, garment cover between fluted glass.",
      "ts": 1792321544526
+    },
+    {
+     "id": "r7",
+     "imgs": [
+      "n28r7-01_hangtag-atelier",
+      "n28r7-02_bag-poolhall",
+      "n28r7-03_gcover-doorway",
+      "n28r7-04_invite-pavilion",
+      "n28r7-05_tissue-desk"
+     ],
+     "name": "Round 7",
+     "note": "Real fashion-house architecture instead of studio voids: tailor's atelier, 1970s pool hall, brutalist doorway, glass pavilion, travertine boutique desk. Light from the place itself, tight crops, neutral colour, Portra 400.",
+     "ts": 1792411320402
     }
    ],
    "seen": 1792409460512,
@@ -6707,6 +6720,12 @@
      "id": "cl1792321544526n28",
      "t": "Round 6 my read: strongest 01 bag on the glossy floor with the reflection, 05 hang tag in slatted light, 06 garment cover between glass with the ghost figure. 02 seated halo works, but the card is small. 03 bag over face reads playful but generic, check that no lips show under the bag. 04 failed: the prism doubled the bag and her figure.",
      "ts": 1792321544526,
+     "who": "claude"
+    },
+    {
+     "id": "cl1792411320402n28",
+     "t": "Round 7 my read: strongest 03 garment cover in the concrete doorway and 05 tissue seal top-down on travertine, both clean and square-on. 01 hang tag in the atelier reads real, but the tag is a bit small and there is a thin black film border. 02 bag in the pool hall has great place and light, but her chin shows at the top edge. 04 invitation at the fluted glass has a doubled hand behind the glass and an added cardigan.",
+     "ts": 1792411320402,
      "who": "claude"
     }
    ],
@@ -7112,9 +7131,49 @@
      "s": "n28/n28r3-05_invitation-held-out-seated-on-floor_s.jpg",
      "ts": 1792409420107,
      "w": 1289
+    },
+    {
+     "h": 1600,
+     "l": "n28/n28r7-01_hangtag-atelier.jpg",
+     "n": "n28r7-01_hangtag-atelier",
+     "s": "n28/n28r7-01_hangtag-atelier_s.jpg",
+     "ts": 1792411320402,
+     "w": 1289
+    },
+    {
+     "h": 1600,
+     "l": "n28/n28r7-02_bag-poolhall.jpg",
+     "n": "n28r7-02_bag-poolhall",
+     "s": "n28/n28r7-02_bag-poolhall_s.jpg",
+     "ts": 1792411320403,
+     "w": 1289
+    },
+    {
+     "h": 1600,
+     "l": "n28/n28r7-03_gcover-doorway.jpg",
+     "n": "n28r7-03_gcover-doorway",
+     "s": "n28/n28r7-03_gcover-doorway_s.jpg",
+     "ts": 1792411320404,
+     "w": 1289
+    },
+    {
+     "h": 1600,
+     "l": "n28/n28r7-04_invite-pavilion.jpg",
+     "n": "n28r7-04_invite-pavilion",
+     "s": "n28/n28r7-04_invite-pavilion_s.jpg",
+     "ts": 1792411320405,
+     "w": 1289
+    },
+    {
+     "h": 1600,
+     "l": "n28/n28r7-05_tissue-desk.jpg",
+     "n": "n28r7-05_tissue-desk",
+     "s": "n28/n28r7-05_tissue-desk_s.jpg",
+     "ts": 1792411320406,
+     "w": 1289
     }
    ],
-   "upd": 1792409420107,
+   "upd": 1792411320402,
    "xi": [
     "n28r2-07_tissue-seal-on-marble",
     "n28r2-08_garment-cover-on-black-hook",
