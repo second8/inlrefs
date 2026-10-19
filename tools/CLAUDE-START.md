@@ -47,3 +47,33 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 - **n28 Atelier:** round 6 posted. Sam liked the glass gap and prism ideas, and the campaign camera settings from his Behance refs. Next round waits for his feedback. Full history is in mockup-rules section 9.
 - **C11, C3, n22:** waiting on Sam's feedback.
 - **n26:** parked.
+
+## Changing the board itself (new versions)
+
+The board page is one large HTML file, about 3.3 MB, because the old gallery thumbnails are embedded in it.
+
+1. `Artifact` action `read` on the board URL. It saves the full HTML to a file and tells you where.
+2. Edit only what Sam asks, with small targeted string replacements in Python. Never retype the file and never touch the `galdata` JSON block.
+3. Publish with `url` set to the board URL, so it stays the same link. Keep its capabilities: assets, db and downloads.
+
+**Features Sam relies on, keep them working:**
+- columns and phases
+- the LATEST round tag
+- the workspace: pins, crosses, finals, round tabs and inspo with the "take" chips
+- Send feedback (`next`) in the workspace top bar
+- the "Copy for Claude: new feedback in" button
+- Sync folders, which uploads 1600 px and 420 px JPGs as assets and adds uimgs and rounds
+- the finals .ps1 export
+
+**Data rules:**
+- uimgs: `{n, l, s, w, h, ts}`, where `l` and `s` are asset ids
+- inspo images are asset ids
+- never delete Sam's pins, crosses, finals or notes
+
+## What Sam judges on (read before planning any round)
+
+- **Variety:** vary the object, the composition and the camera in every shot. "Same same" is his most common complaint.
+- **Close:** the design surface is big and square-on, with no dead space.
+- **No faces or profiles,** ever.
+- **Real, not AI:** real light shapes, real lenses, real film grain. Flat, glossy or stock-looking images get rejected.
+- **Plan first:** send a short plan with one bold line per shot, then the Approve. He wants intentional, researched choices, not random ones.
