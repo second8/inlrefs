@@ -56,6 +56,9 @@ Inlay (inlay.supply) is Sam's premium library of device and print mockups. Every
 - Never the slate mock-neck knit (old clothing_01).
 - Real, natural poses a person would actually do. No floating objects, no wrong scale, no hand hanging limp over a table edge.
 
+**Inspiration images (HARD RULE, Sam 19 Oct)**
+- Never pass an inspiration image (Figma, board inspo, links) to Weave as a reference. Look at it, then describe what to take in words. A passed image gets copied almost identically. Only our own prop, character and outfit sheets go in as image references. builder3 refuses refs/inspo paths.
+
 **Props and scenes**
 - Use our own props (section 7) in as many shots as possible. Never props, objects or compositions taken from inspiration images.
 - No packaging boxes. No curled or lifted paper corners. No dirty or cheap-looking props. No random extra objects ("cringe props").

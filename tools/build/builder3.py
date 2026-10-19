@@ -57,12 +57,13 @@ def refs_for(C, s):
     if C.get('look_url') and s.get('use_look'):
         out.append((C['look_url'], 'the look of this place: take its materials, colour and light only; ignore its composition, camera position and props'))
     for u, take in s.get('looks', []):
-        out.append((u, f'an inspiration photograph: take only its {take}; do not copy its objects, room, furniture, props or layout'))
+        raise SystemExit('HARD RULE: never pass inspiration images as references; describe them in words (Sam, 19 Oct)')
     m, who = mode(C, s)
     if m in ('edge','back'):
         ch = char_for(C, who); g, _ = CHAR[ch]
         out.append((URL[ch], f'the {g}: take only {"his" if g=="man" else "her"} skin tone and hands; ignore the clothes and the face on the sheet'))
     for k in s.get('refs', []):
+        if 'refs/inspo' in URL.get(k,''): raise SystemExit('HARD RULE: never pass inspiration images as references; describe them in words (Sam, 19 Oct)')
         if k in DEV:
             noun, take = DEV[k]; out.append((URL[k], f'{noun}: take {take}'))
         else:
