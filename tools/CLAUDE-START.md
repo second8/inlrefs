@@ -32,7 +32,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 ## Building prompts
 
 - **The builder:** `tools/build/` in `second8/inlrefs`. Clone it sparse: `git clone --depth 1 --filter=blob:none --sparse https://github.com/second8/inlrefs && git -C inlrefs sparse-checkout set tools`.
-- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r10_softcolour.py`, n29 `n29r3_panel.py`, n30 `n30r2_dusk.py`. `refs/inspo/` holds old inspo copies: never use them as Weave refs.
+- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r11_softcolour.py`, n29 `n29r4_hall.py`, n30 `n30r3_wide.py`. Shots can set their own `aspect` and `format_words` (n30 r3 uses 16:9). `refs/inspo/` holds old inspo copies: never use them as Weave refs.
 - **Build:** `python3 builder3.py collections3/<file>.py` writes `out3/<id>.json`, with prompt, images and aspect per shot.
 - **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 101. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
 - **Run each prompt:**
@@ -43,10 +43,10 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 
 ## Where things stand (19 Oct)
 
-- **Credits:** about 1838 Weave credits left.
-- **n28 Atelier:** round 9 posted. R8 liked: 01 (pose, framing, comp), 04, 05 (fluted glass). R8-02 tag too small vs clothes, R8-03 too far: tags need tight crops. New inspo: B&W street fashion in hard midday sun, stone walls, long shadows. R9 = R8 crops in hard sun.
-- **n29 Spatial Awareness:** round 2 posted. R1 all bad: mixed looks (bright, snow, dark), CRT 'gaming', projection 'ugly'. Sam: one look for the whole collection, recreate his Figma refs. R2 = dark museum at night, polished floor, refs passed as images, every face plain white.
-- **n30 Low Cloud:** round 2 posted. R1: 01 closest, 02 too bright; no phones, city and billboards only; moodier but realistic; one grade for all. R2 = both inspo images as look refs on every shot, dusk.
+- **Credits:** about 1763 Weave credits left.
+- **n28 Atelier:** round 11 posted. Finals so far: R9 01, 02, 04, 05 and R10 01, 03, 04, 05. Direction: hard-sun pale stone street, soft muted colour (Portra 160), true object scale, nothing staged.
+- **n29 Spatial Awareness:** round 4 posted. Sam was angry at R3 (generic lobbies, 'nothing to do with an art installation, you keep guessing'). Stay on his Figma moodboard 194:1373: R4 = one fixed hall (the R2-01 hall in words) + a different moodboard installation per shot. Do not drift from it.
+- **n30 Low Cloud:** all five R2 are finals. Round 3 posted: simpler single-layer cloud, three 16:9 horizontals.
 - **C11, C3, n22:** waiting on Sam's feedback.
 - **n26:** parked.
 

@@ -110,7 +110,7 @@ def build_prompt(C, s):
     avoid = list(dict.fromkeys(ca + s.get('avoid', [])[:3]))
     lines = [
         f"{C['register']}: {s['moment']}",
-        (f"References: {ref_txt} " if refs else '') + f"The output is one single photograph, {C['format_words']}.",
+        (f"References: {ref_txt} " if refs else '') + f"The output is one single photograph, {s.get('format_words') or C['format_words']}.",
         (f"{COMP[s['comp']]} " if s.get('comp') else '') + f"Shot: {s['shot']} {people_line(C, s)}".strip(),
         f"Place: {C.get('world_short') or C['world']}",
         f"Light: {C['light']}",
@@ -131,7 +131,7 @@ if __name__ == '__main__':
         if only and s['n'] not in only: continue
         p, imgs = build_prompt(C, s)
         out.append({'id': f"{C['id']}-{s['n']:02d}", 'name': s['slug'],
-                    'input': {'prompt': p, 'images': imgs, 'resolution': '2K', 'aspect_ratio': C.get('aspect', '4:5')}})
+                    'input': {'prompt': p, 'images': imgs, 'resolution': '2K', 'aspect_ratio': s.get('aspect') or C.get('aspect', '4:5')}})
     os.makedirs('out3', exist_ok=True)
     tag = '_t' if only else ''
     json.dump(out, open(f"out3/{C['id']}{tag}.json", 'w'), indent=1, ensure_ascii=False)
