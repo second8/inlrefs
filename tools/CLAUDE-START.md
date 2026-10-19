@@ -24,7 +24,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
   - `thread`: the existing ones plus `{id:'cl<ts><card>', t:'Round N my read: ...', ts, who:'claude'}`
   - `next: false`, `upd: ts`
 - **Images reach the board through Sam's "Sync folders" button,** which reads his PC folder. So after a run:
-  1. Write `get-roundNN.ps1` to `C:\Users\38349\Desktop\01\system\`. Same format as before: a list of `(folder, filename, weave url)`, skip existing files, retry 3 times, print `Done. X images, Y already there, Z failed.`, CRLF line endings.
+  1. Write `get-roundNN.ps1` to `C:\Users\38349\Desktop\01\system\` with `python3 tools/build/dl/mkps1.py <out.ps1> '<card path>\round N' 'name|url' ...`. Same format as before: a list of `(folder, filename, weave url)`, skip existing files, retry 3 times, print `Done. X images, Y already there, Z failed.`, CRLF line endings.
   2. Commit it with device_commit_files when the PC is linked. If not, put the URLs in a code block.
   3. Grok runs the script, then Sam clicks Sync folders.
 - **Image names:** `<card><round>-NN_<slug>`, for example `n28r7-01_bag-in-spotlight`. The round folder is `<card path>\round N`.
@@ -32,7 +32,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 ## Building prompts
 
 - **The builder:** `tools/build/` in `second8/inlrefs`. Clone it sparse: `git clone --depth 1 --filter=blob:none --sparse https://github.com/second8/inlrefs && git -C inlrefs sparse-checkout set tools`.
-- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest n28 file: `n28r6_campaign.py`.
+- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest n28 file: `n28r7_vitrine.py`.
 - **Build:** `python3 builder3.py collections3/<file>.py` writes `out3/<id>.json`, with prompt, images and aspect per shot.
 - **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 99. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
 - **Run each prompt:**
@@ -43,8 +43,8 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 
 ## Where things stand (19 Oct)
 
-- **Credits:** about 2088 Weave credits left.
-- **n28 Atelier:** round 6 posted. Sam liked the glass gap and prism ideas, and the campaign camera settings from his Behance refs. Next round waits for his feedback. Full history is in mockup-rules section 9.
+- **Credits:** about 2038 Weave credits left.
+- **n28 Atelier:** round 7 posted (atelier after hours, R6 film finish plus R5 glass in real vitrines and fitting-room doors). R6 was all bad except the hang tag ('good image quality but bad environment'): black void and seamless sets are out. Waiting on his feedback. Full history is in mockup-rules section 9.
 - **C11, C3, n22:** waiting on Sam's feedback.
 - **n26:** parked.
 

@@ -337,7 +337,8 @@ Only work on the collections Sam says are next.
 - **R3 (dark hall under a glowing light ceiling, wide low lens):** bland, not artistic enough.
 - **R4 (one in-camera trick each: flash drag, blade of light, fluted glass, 200mm spotlight):** only the invitation through fluted glass had potential.
 - **R5 (glass variations):** "started to work great". Liked best: the invitation with a prism ghost, and the garment cover through a gap in a fluted glass screen. Bad: glass used just to use glass (bag past a ribbed wall). Weaker: hang tag beside reeded glass.
-- **R6 (Behance camera settings):** my read was that the strongest were the bag on a glossy black floor with a spotlight pool and mirror reflection, the hang tag in diagonal slatted light, and the garment cover between glass panels. The prism with the bag failed: it doubled the bag and the woman. **Sam has not reviewed R6 yet.**
+- **R6 (Behance camera settings):** my read was that the strongest were the bag on a glossy black floor with a spotlight pool and mirror reflection, the hang tag in diagonal slatted light, and the garment cover between glass panels. The prism with the bag failed: it doubled the bag and the woman. **Sam on R6: all bad, except the hang tag in slatted light 'good image quality but bad environment'.** R5 he rated all 'almost good', 05 generic.
+- **R7 (atelier after hours):** R6 film finish plus R5 glass, but the glass belongs to the place: lime plaster walls, oak floor, steel-framed fluted glass partitions, vitrines and fitting-room doors. No void, no seamless.
 
 **The direction that works now:**
 - A real art-directed accessories campaign: hard shaped light (spotlight pools, slats, blades), glossy floors with reflections, grey seamless with a spotlight halo, intimate 35 to 50mm crops of a hand or legs with the product, and wit in the pose.
