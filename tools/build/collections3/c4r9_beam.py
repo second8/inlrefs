@@ -1,0 +1,73 @@
+# c4 round 9, final big round (Sam 18:47: "we need 15 more", be intentional, props via Grok 44-55). Every shot a new mockup type for C4,
+# one of our props, one named composition. Retired: phone, posters/framed prints, card on travertine, laptop. Walls stay dark.
+import importlib.util,os
+_s=importlib.util.spec_from_file_location('b',os.path.join(os.path.dirname(__file__),'c4r8_beam.py'));_m=importlib.util.module_from_spec(_s);_s.loader.exec_module(_m)
+R2_1=_m.R2_1;R2_2=_m.R2_2;LOOK=_m.LOOK
+C=dict(_m.C);C['id']='c4r9';C['name']='Beam (round 9)'
+C['avoid']=_m.C['avoid'][:2]+['a second light source or fill','any object not named in the shot','halation or glow','a bright or washed-out wall','a phone','a laptop']
+BL='plain blank, nothing printed on it'
+def sh(n,slug,kind,noun,refs,comp,look,moment,shot,surface,avoid=None):
+    d={'n':n,'slug':slug,'kind':kind,'noun':noun,'refs':refs,'people':'none','comp':comp,'looks':[(look,LOOK)],'moment':moment,'shot':shot,'surface':surface}
+    if avoid: d['avoid']=avoid
+    return d
+S=[
+ sh(1,'tee-oak-hanger-peg-rail','print','the t-shirt front',['hanger_tee','peg_rail'],'A',R2_2,
+  'Our plain off-white tee on its oak hanger, hanging from the middle peg of the oak rail, one band of late sun across it.',
+  'Straight on, camera exactly at the centre of the shirt, 50mm, f/2.8, close. The rail runs level near the top; the tee hangs on the centre line, its front flat and square to the camera, filling about 70 percent of the frame height, sharp, lit by the sun band. The charcoal wall around stays dark.',
+  'THE T-SHIRT FRONT IS PLAIN OFF-WHITE HEAVY COTTON, hanging flat and smooth, soft natural folds only at the sleeves and hem, '+BL+'.',['graphics on the shirt']),
+ sh(2,'paper-bag-floorboards-sun-band','print','the bag front',['paper_bag'],'A',R2_2,
+  'Our off-white paper shopping bag standing on the honey-oak floorboards in a band of late sun against the dark wall.',
+  'Straight on, camera low at the centre of the bag, 50mm, f/2.8, close. The bag stands on the centre line, front panel square to the camera, filling about 70 percent of the frame height, sharp; the rope handles stand up. The sun band lights it; its crisp shadow falls to one side on the boards.',
+  'THE BAG FRONT IS PLAIN MATTE OFF-WHITE PAPER, flat with crisp folded edges, '+BL+'.',['tissue paper','a second bag']),
+ sh(3,'candle-jar-oak-sill-sun','print','the candle label',['candle'],'A',R2_1,
+  'Our white ceramic candle, unlit, standing on the deep oak sill in a hard slice of late sun.',
+  'Straight on, camera exactly at the label, 85mm, f/2.8, close. The candle stands on the centre line, its wrap label square to the camera, filling about 55 percent of the frame height, sharp. The sun throws one long crisp shadow across the oak; the wall behind stays dark.',
+  'THE WRAP LABEL IS PLAIN MATTE WHITE PAPER around the vessel, smooth, crisp edges, '+BL+'.',['a flame','smoke']),
+ sh(4,'stoneware-plate-bench-top-down','print','the plate',['plate','bench_oak'],'B',R2_2,
+  'Our speckled stoneware plate lying empty on the oak bench, the window grid laid across the wood beside it.',
+  'Directly from above, lens pointing straight down, 50mm, f/2.8, close. The round plate sits centred, filling about 70 percent of the frame width, sharp; the bench grain runs straight across; one mullion shadow line crosses the oak beside the plate, never over it.',
+  'THE PLATE FACE IS PLAIN SATIN OFF-WHITE GLAZE with a faint speckle, clean, '+BL+'.',['food','cutlery']),
+ sh(5,'skateboard-deck-charcoal-wall','print','the deck bottom',['deck'],'A',R2_2,
+  'Our plain skateboard deck standing on its tail, leaning against the charcoal wall, its white bottom facing out in a tall band of sun.',
+  'Straight on, camera at the centre of the deck, 50mm, f/2.8. The deck stands upright on the centre line, its bottom face square to the camera, filling about 80 percent of the frame height, sharp, the maple ply edge showing along its sides. The sun band lights it; the wall either side falls dark.',
+  'THE DECK BOTTOM IS PLAIN SMOOTH WHITE, flat, crisp outline, '+BL+'.',['trucks or wheels','stickers']),
+ sh(6,'linen-cushion-window-seat-sun','print','the cushion front',['cushion'],'A',R2_1,
+  'Our square linen cushion standing upright on the deep oak window seat, lit by the late sun through the mullions.',
+  'Straight on, camera exactly at the cushion, 50mm, f/2.8, close. The cushion sits on the centre line, its front square to the camera, filling about 65 percent of the frame height, sharp, the weave clear. One soft mullion shadow line lies on the seat beside it; the reveal walls stay dark.',
+  'THE CUSHION FRONT IS PLAIN OFF-WHITE WASHED LINEN, smooth and full, '+BL+'.',['other cushions','patterns']),
+ sh(7,'chocolate-bar-bench-top-down','print','the wrapper',['choc','bench_oak'],'B',R2_2,
+  'Our thin flat chocolate bar in its plain paper wrap lying on the oak bench in a sharp patch of sun.',
+  'Directly from above, lens pointing straight down, 50mm, f/2.8, close. The thin flat bar lies square to the frame, filling about 55 percent of the frame width, sharp, a sliver of foil at one folded end. A crisp diagonal shadow edge crosses the oak beside it.',
+  'THE WRAPPER FACE IS PLAIN MATTE OFF-WHITE PAPER, flat with crisp folded ends, '+BL+'.',['a box','chocolate pieces']),
+ sh(8,'flatweave-rug-floor-top-down','print','the rug field',['rug'],'B',R2_1,
+  'Our flat-woven wool rug lying on the honey-oak floorboards, the late sun laying the window grid across the boards beside it.',
+  'Directly from above, lens pointing straight down, 35mm, f/4. The rug lies square to the frame, filling about 75 percent of the frame width, sharp, its darker border band and fringes crisp; the mullion shadows fall on the floorboards around it, only a soft edge of sun touching one corner.',
+  'THE RUG FIELD IS PLAIN NATURAL OFF-WHITE WOOL with a fine woven texture, lying flat, '+BL+'.',['furniture','patterns']),
+ sh(9,'magazine-cover-ochre-stool-top-down','print','the magazine cover',['stool_ochre'],'B',R2_1,
+  'A closed magazine lying on top of our ochre-lacquered stool, a square of hard sun landing on it.',
+  'Directly from above, lens pointing straight down, 50mm, f/2.8, close. The stool top fills most of the frame; the closed magazine lies square to the frame on it, filling about 60 percent of the frame height, sharp. The stool is clearly ochre-yellow lacquer; the floor around falls into shadow.',
+  'THE MAGAZINE COVER IS PLAIN MATTE WHITE paper, flat, crisp corners and spine, '+BL+'.',['an open magazine','a curled corner']),
+ sh(10,'tablet-on-oak-easel-tight','ipad','the tablet',['ipad','easel_oak'],'D',R2_2,
+  'A tablet resting upright on the ledge of our slim oak easel, standing in the late sun like a small painting.',
+  'Straight on, very close, 85mm, f/2.8, camera exactly at the screen. The tablet stands on the easel ledge facing the camera dead square, filling about 70 percent of the frame width, sharp; the oak ledge and the brass hinge show at the edges. The wall behind stays dark.',None),
+ sh(11,'cap-on-travertine-plinth','print','the cap front',['cap','plinth_trav'],'D',R2_1,
+  'Our plain off-white cap resting on the top of the travertine plinth, its front panels catching the low sun.',
+  'Straight on, close, 85mm, f/2.8, camera at the height of the cap. The cap faces the camera square-on on the centre line, its front panels filling about 55 percent of the frame width, sharp, brim toward the camera; the travertine pores show below; the wall behind stays dark.',
+  'THE FRONT PANELS ARE PLAIN OFF-WHITE COTTON TWILL, smooth, '+BL+'.',['embroidery','a logo']),
+ sh(12,'postcard-in-window-mullion','print','the postcard',[],'D',R2_1,
+  'A single postcard tucked upright into the joint of a dark window mullion, the late sun coming through behind the panes.',
+  'Straight on, very close, 85mm, f/2.8, camera exactly at the card. The postcard stands on the centre line, its face square to the camera, filling about 60 percent of the frame width, sharp, its edges caught in the slim dark mullion; soft warm light glows through the panes around it without blowing out.',
+  'THE POSTCARD FACE IS PLAIN MATTE WHITE thick card, flat, crisp corners, '+BL+'.',['a window view, sky or rooftops']),
+ sh(13,'pump-bottle-bench-vase-shadow','print','the bottle label',['pump','vase_char'],'A',R2_2,
+  'Our frosted amber pump bottle standing on the oak bench, the soft curved shadow of our charcoal vase falling beside it.',
+  'Straight on, camera exactly at the label, 85mm, f/2.8, close. The bottle stands on the centre line, label square to the camera, filling about 60 percent of the frame height, sharp, the sun glowing through the frosted glass; the vase stands just outside the frame and only its curved shadow falls on the oak beside the bottle.',
+  'THE LABEL IS PLAIN MATTE WHITE PAPER, flat on the glass, crisp edges, '+BL+'.'),
+ sh(14,'oak-serving-board-top-down','print','the board face',['board','bench_oak'],'B',R2_2,
+  'Our honey-oak serving board lying empty on the oak bench, a sharp diagonal edge of late sun across it.',
+  'Directly from above, lens pointing straight down, 50mm, f/2.8, close. The board lies square to the frame, handle to the right, filling about 75 percent of the frame width, sharp; a crisp diagonal sun edge crosses the frame, the board half bright half in soft shadow.',
+  'THE BOARD FACE IS PLAIN OILED HONEY OAK with open grain, smooth and flat, nothing burned or printed on it.',['food','a knife']),
+ sh(15,'soap-band-travertine-edge-low','print','the soap band',['soap','plinth_trav'],'D',R2_1,
+  'Our oatmeal soap bar with its paper band sitting at the front edge of the travertine plinth in low sun.',
+  'Straight on, very close, camera at the height of the soap, 90mm macro, f/4. The bar sits on the centre line, its band square to the camera, filling about 60 percent of the frame width, sharp; the travertine edge runs straight across the bottom; a long low shadow falls behind; the wall stays dark.',
+  'THE BAND IS PLAIN MATTE OFF-WHITE UNCOATED PAPER, flat and wrapped tight, crisp edges, '+BL+'.',['foam','a dish']),
+]
