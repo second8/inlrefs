@@ -155,6 +155,14 @@ A={
  'marble':('devices/00 Props/prop_98-marble-block.png','THE MARBLE BLOCK: our solid white honed marble block with soft grey diagonal veining and crisp edges; take its exact proportions'),
  'gal_lightbox':('devices/00 Props/prop_99-gallery-lightbox.png','THE LIGHTBOX: our tall freestanding gallery lightbox; take its exact slim matte black frame, depth, low steel feet and evenly lit opal face, scaled as the shot says'),
  'crt':('devices/00 Props/prop_100-grey-crt-monitor.png','THE CRT MONITOR: our warm light grey 1990s CRT; take its exact deep rounded back, thin bezel, curved glass and small power button'),
+ 'r29_lobby':('refs/inspo/n29_lobby-lightbox.jpg','THE REFERENCE INSTALLATION: recreate this space, its layout, camera height, light and mood; but every screen, lightbox, cube face or projection in it becomes a plain white glowing surface with nothing on it, no images, faces, text or colour'),
+ 'r29_hall':('refs/inspo/n29_screen-hall.jpg','THE REFERENCE INSTALLATION: recreate this space, its layout, camera height, light and mood; but every screen, lightbox, cube face or projection in it becomes a plain white glowing surface with nothing on it, no images, faces, text or colour'),
+ 'r29_cubes':('refs/inspo/n29_lit-cubes.jpg','THE REFERENCE INSTALLATION: recreate this space, its layout, camera height, light and mood; but every screen, lightbox, cube face or projection in it becomes a plain white glowing surface with nothing on it, no images, faces, text or colour'),
+ 'r29_box':('refs/inspo/n29_translucent-box.jpg','THE REFERENCE INSTALLATION: recreate this space, its layout, camera height, light and mood; but every screen, lightbox, cube face or projection in it becomes a plain white glowing surface with nothing on it, no images, faces, text or colour; its green cast becomes neutral'),
+ 'r30_tower':('refs/inspo/n30_led-tower-fog.jpg','THE LOOK REFERENCE: take only its light, colour, grade, grain, weather and mood; ignore its subject, layout and the content of any screen'),
+ 'r30_square':('refs/inspo/n30_smog-square.jpg','THE LOOK REFERENCE: take only its light, colour, grade, grain, weather and mood; ignore its subject, layout and the content of any screen'),
+ 'r30_tower_rec':('refs/inspo/n30_led-tower-fog.jpg','THE REFERENCE SCENE: recreate this place, camera, weather, light and mood closely; the tower screen becomes plain white with nothing on it'),
+ 'r30_square_rec':('refs/inspo/n30_smog-square.jpg','THE REFERENCE SCENE: recreate this place, camera, weather, light and mood closely, but at dusk with the screen lit; the screen becomes plain white with nothing on it'),
 }
 URL={k:u(v[0]) for k,v in A.items()}
 JOB={k:v[1] for k,v in A.items()}

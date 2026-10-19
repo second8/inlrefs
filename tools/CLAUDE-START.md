@@ -32,7 +32,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 ## Building prompts
 
 - **The builder:** `tools/build/` in `second8/inlrefs`. Clone it sparse: `git clone --depth 1 --filter=blob:none --sparse https://github.com/second8/inlrefs && git -C inlrefs sparse-checkout set tools`.
-- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r8_studio.py`, n29 `n29r_spatial.py`, n30 `n30r_lowcloud.py`.
+- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r9_sun.py`, n29 `n29r2_museum.py`, n30 `n30r2_dusk.py`. Inspo refs for prompts live in `refs/inspo/` (keys r29_*, r30_* in assets.py).
 - **Build:** `python3 builder3.py collections3/<file>.py` writes `out3/<id>.json`, with prompt, images and aspect per shot.
 - **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 101. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
 - **Run each prompt:**
@@ -43,10 +43,10 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 
 ## Where things stand (19 Oct)
 
-- **Credits:** about 1963 Weave credits left.
-- **n28 Atelier:** round 8 posted. R7 (atelier glass sets) was rejected: 'makes 0 sense'. Sam: R4 is still closest (camera, position, framing, people) and the first inspo's black studio is THE art direction. R8 = black studio, B&W Tri-X, believable moments only.
-- **n29 Spatial Awareness (new):** round 1 posted. Art installations, the screen or lightbox is the artwork. Moodboard: Figma file okwzd2XQmHVL0hl4pP3zA9 section 194:1373 (strongest 191:1327, 191:1326; outside = snow, 191:1328). Props 99 lightbox, 100 CRT.
-- **n30 Low Cloud (new, Sam named it):** round 1 posted. City screens under low cloud; fog stays behind the screen. Moodboard section 194:1376, look and feel 192:1336.
+- **Credits:** about 1888 Weave credits left.
+- **n28 Atelier:** round 9 posted. R8 liked: 01 (pose, framing, comp), 04, 05 (fluted glass). R8-02 tag too small vs clothes, R8-03 too far: tags need tight crops. New inspo: B&W street fashion in hard midday sun, stone walls, long shadows. R9 = R8 crops in hard sun.
+- **n29 Spatial Awareness:** round 2 posted. R1 all bad: mixed looks (bright, snow, dark), CRT 'gaming', projection 'ugly'. Sam: one look for the whole collection, recreate his Figma refs. R2 = dark museum at night, polished floor, refs passed as images, every face plain white.
+- **n30 Low Cloud:** round 2 posted. R1: 01 closest, 02 too bright; no phones, city and billboards only; moodier but realistic; one grade for all. R2 = both inspo images as look refs on every shot, dusk.
 - **C11, C3, n22:** waiting on Sam's feedback.
 - **n26:** parked.
 
@@ -74,6 +74,10 @@ The board page is one large HTML file, about 3.3 MB, because the old gallery thu
 - never delete Sam's pins, crosses, finals or notes
 
 ## What Sam judges on (read before planning any round)
+
+- **One look per collection:** same grade, light and world on every image of a collection. Mixed looks get rejected.
+- **Recreate his refs:** when he gives Figma or inspo refs, pass them as image references (push to `refs/inspo/`) and say what to take; screens and print faces become plain white.
+- **Tags and small print need tight crops:** the mockup surface must be big; a tag lost on a whole garment is wrong.
 
 - **Variety:** vary the object, the composition and the camera in every shot. "Same same" is his most common complaint.
 - **Close:** the design surface is big and square-on, with no dead space.
