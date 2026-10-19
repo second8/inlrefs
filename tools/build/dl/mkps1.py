@@ -1,10 +1,12 @@
-"""Write get-roundNN.ps1: python3 mkps1.py <out.ps1> <folder> <name|url> ..."""
+"""Write get-roundNN.ps1: python3 mkps1.py <out.ps1> <default folder> <name|url> ...  (an item can override the folder: 'folder>name|url')"""
 import sys
 out,folder,pairs=sys.argv[1],sys.argv[2],sys.argv[3:]
 L=['$ErrorActionPreference = "Continue"','$base = "C:\\Users\\38349\\Desktop\\01"','$items = @(']
 rows=[]
 for p in pairs:
-    n,u=p.split('|',1); rows.append(f'  @("{folder}", "{n}.png", "{u}")')
+    f=folder
+    if '>' in p: f,p=p.split('>',1)
+    n,u=p.split('|',1); rows.append(f'  @("{f}", "{n}.png", "{u}")')
 L.append(',\n'.join(rows)); L+=[')','$ok=0; $have=0; $fail=0',
 'foreach ($it in $items) {','  $dir = Join-Path $base $it[0]','  New-Item -ItemType Directory -Force -Path $dir | Out-Null',
 '  $dst = Join-Path $dir $it[1]','  if (Test-Path $dst) { $have++; continue }','  $done=$false',

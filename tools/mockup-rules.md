@@ -154,7 +154,7 @@ Create one photograph from this brief. Photorealistic, landscape 3:2, high resol
   "negative_prompt": "logos, brand names, text, numbers, watermark, <things it must not have>"
 }
 ```
-For outfits, use views of an invisible ghost mannequin: side, front, and back or flat lay. Next free prop number: **99**. After pushing, add the prop to your reference list with a one-line job text.
+For outfits, use views of an invisible ghost mannequin: side, front, and back or flat lay. Next free prop number: **101**. After pushing, add the prop to your reference list with a one-line job text.
 
 ---
 
@@ -304,6 +304,8 @@ Use the path to build the raw URL. Use the job text as the "Image N is ..." text
 | `look_slip` | `devices/00 Props/prop_95-n28-look-ivory-slip.png` | THE OUTFIT: take exactly this ankle-length ivory satin slip dress with the cowl neckline and the oversized ivory knit cardigan draped over the shoulders, ivory pointed mules |
 | `look_shirt` | `devices/00 Props/prop_96-n28-look-shirt-dress.png` | THE OUTFIT: take exactly this oversized white poplin shirt dress with the stand collar, full sleeves gathered into very deep stiff cuffs, slim black belt, black slingback heels |
 | `look_gown` | `devices/00 Props/prop_97-n28-look-black-gown.png` | THE OUTFIT: take exactly this floor-length one-shoulder matte black jersey gown with the drape at the hip, long black gloves, black pumps |
+| `gal_lightbox` | `devices/00 Props/prop_99-gallery-lightbox.png` | THE LIGHTBOX: our tall freestanding gallery lightbox; take its exact slim matte black frame, depth, low steel feet and evenly lit opal face, scaled as the shot says |
+| `crt` | `devices/00 Props/prop_100-grey-crt-monitor.png` | THE CRT MONITOR: our warm light grey 1990s CRT; take its exact deep rounded back, thin bezel, curved glass and small power button |
 | `marble` | `devices/00 Props/prop_98-marble-block.png` | THE MARBLE BLOCK: our solid white honed marble block with soft grey diagonal veining and crisp edges; take its exact proportions |
 
 Retired, never use: character 05, character 08 (`ch08`), and the slate mock-neck clothing_01.
@@ -320,6 +322,8 @@ Retired, never use: character 05, character 08 (`ch08`), and the slate mock-neck
 | n22 Canopy | `N22 Canopy - Weave` | 4 rounds. Fuel forecourt at night and inside the car. Waiting on feedback. |
 | n26 Tonal | `N26 Tonal - Weave` | 2 rounds. Parked. |
 | **n28 Atelier** | `N28 Atelier - Weave\round N` | **Active.** See section 9. |
+| **n29 Spatial Awareness** | `N29 Spatial - Weave\round N` | **Active, new 19 Oct.** Art installation mockups. See CLAUDE-START. |
+| **n30 Low Cloud** | `N30 Low Cloud - Weave\round N` | **Active, new 19 Oct.** City screens under low cloud. See CLAUDE-START. |
 
 Only work on the collections Sam says are next.
 
@@ -338,9 +342,12 @@ Only work on the collections Sam says are next.
 - **R4 (one in-camera trick each: flash drag, blade of light, fluted glass, 200mm spotlight):** only the invitation through fluted glass had potential.
 - **R5 (glass variations):** "started to work great". Liked best: the invitation with a prism ghost, and the garment cover through a gap in a fluted glass screen. Bad: glass used just to use glass (bag past a ribbed wall). Weaker: hang tag beside reeded glass.
 - **R6 (Behance camera settings):** my read was that the strongest were the bag on a glossy black floor with a spotlight pool and mirror reflection, the hang tag in diagonal slatted light, and the garment cover between glass panels. The prism with the bag failed: it doubled the bag and the woman. **Sam on R6: all bad, except the hang tag in slatted light 'good image quality but bad environment'.** R5 he rated all 'almost good', 05 generic.
-- **R7 (atelier after hours):** R6 film finish plus R5 glass, but the glass belongs to the place: lime plaster walls, oak floor, steel-framed fluted glass partitions, vitrines and fitting-room doors. No void, no seamless.
+- **R7 (atelier after hours), rejected:** 'makes 0 sense, why would a person stick between 2 glasses with a bag'. Only the tag on the vitrine glass was 'almost'.
+- **R7 plan was:** R6 film finish plus R5 glass, but the glass belongs to the place: lime plaster walls, oak floor, steel-framed fluted glass partitions, vitrines and fitting-room doors. No void, no seamless.
 
-**The direction that works now:**
+- **R8 (19 Oct):** Sam: 'r4 still is the closest and best, camera, position, framing and people; I don't like the art direction; glass usage there was better.' 'The og inspo with the black bg studio look is the art direction I want.' New inspo: B&W bag carried in a side crop on black, hang tags on garments on a rail in hard light, a shirt on a hanger with a tag on plain grey, a card in folded tissue. R8 = black studio, B&W Tri-X, real moments only.
+
+**The direction that works now (updated R8):** black studio, black and white, R4 camera and crops, every shot a moment that could really happen. Older notes below:
 - A real art-directed accessories campaign: hard shaped light (spotlight pools, slats, blades), glossy floors with reflections, grey seamless with a spotlight halo, intimate 35 to 50mm crops of a hand or legs with the product, and wit in the pose.
 - Neutral colour: no blue or colour casts. Real film grain, Portra 400 or Tri-X, visible but natural.
 - Glass and prism effects only when they add meaning, and the design surface must stay single, sharp and outside the effect.

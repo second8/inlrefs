@@ -153,6 +153,8 @@ A={
  'look_shirt':('devices/00 Props/prop_96-n28-look-shirt-dress.png','THE OUTFIT: take exactly this oversized white poplin shirt dress with the stand collar, full sleeves gathered into very deep stiff cuffs, slim black belt, black slingback heels'),
  'look_gown':('devices/00 Props/prop_97-n28-look-black-gown.png','THE OUTFIT: take exactly this floor-length one-shoulder matte black jersey gown with the drape at the hip, long black gloves, black pumps'),
  'marble':('devices/00 Props/prop_98-marble-block.png','THE MARBLE BLOCK: our solid white honed marble block with soft grey diagonal veining and crisp edges; take its exact proportions'),
+ 'gal_lightbox':('devices/00 Props/prop_99-gallery-lightbox.png','THE LIGHTBOX: our tall freestanding gallery lightbox; take its exact slim matte black frame, depth, low steel feet and evenly lit opal face, scaled as the shot says'),
+ 'crt':('devices/00 Props/prop_100-grey-crt-monitor.png','THE CRT MONITOR: our warm light grey 1990s CRT; take its exact deep rounded back, thin bezel, curved glass and small power button'),
 }
 URL={k:u(v[0]) for k,v in A.items()}
 JOB={k:v[1] for k,v in A.items()}

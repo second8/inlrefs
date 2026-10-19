@@ -24,7 +24,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
   - `thread`: the existing ones plus `{id:'cl<ts><card>', t:'Round N my read: ...', ts, who:'claude'}`
   - `next: false`, `upd: ts`
 - **Images reach the board through Sam's "Sync folders" button,** which reads his PC folder. So after a run:
-  1. Write `get-roundNN.ps1` to `C:\Users\38349\Desktop\01\system\` with `python3 tools/build/dl/mkps1.py <out.ps1> '<card path>\round N' 'name|url' ...`. Same format as before: a list of `(folder, filename, weave url)`, skip existing files, retry 3 times, print `Done. X images, Y already there, Z failed.`, CRLF line endings.
+  1. Write `get-roundNN.ps1` (one script can cover several cards: `'folder>name|url'` items) to `C:\Users\38349\Desktop\01\system\` with `python3 tools/build/dl/mkps1.py <out.ps1> '<card path>\round N' 'name|url' ...`. Same format as before: a list of `(folder, filename, weave url)`, skip existing files, retry 3 times, print `Done. X images, Y already there, Z failed.`, CRLF line endings.
   2. Commit it with device_commit_files when the PC is linked. If not, put the URLs in a code block.
   3. Grok runs the script, then Sam clicks Sync folders.
 - **Image names:** `<card><round>-NN_<slug>`, for example `n28r7-01_bag-in-spotlight`. The round folder is `<card path>\round N`.
@@ -32,9 +32,9 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 ## Building prompts
 
 - **The builder:** `tools/build/` in `second8/inlrefs`. Clone it sparse: `git clone --depth 1 --filter=blob:none --sparse https://github.com/second8/inlrefs && git -C inlrefs sparse-checkout set tools`.
-- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest n28 file: `n28r7_vitrine.py`.
+- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r8_studio.py`, n29 `n29r_spatial.py`, n30 `n30r_lowcloud.py`.
 - **Build:** `python3 builder3.py collections3/<file>.py` writes `out3/<id>.json`, with prompt, images and aspect per shot.
-- **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 99. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
+- **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 101. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
 - **Run each prompt:**
   - weave_run_model, model `bebebed5-50c1-4701-98b3-86929db21585`, input `{prompt, images, resolution:'2K', aspect_ratio}`
   - always a structured Approve/Cancel first, then `acknowledgedCost: 5`
@@ -43,8 +43,10 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 
 ## Where things stand (19 Oct)
 
-- **Credits:** about 2038 Weave credits left.
-- **n28 Atelier:** round 7 posted (atelier after hours, R6 film finish plus R5 glass in real vitrines and fitting-room doors). R6 was all bad except the hang tag ('good image quality but bad environment'): black void and seamless sets are out. Waiting on his feedback. Full history is in mockup-rules section 9.
+- **Credits:** about 1963 Weave credits left.
+- **n28 Atelier:** round 8 posted. R7 (atelier glass sets) was rejected: 'makes 0 sense'. Sam: R4 is still closest (camera, position, framing, people) and the first inspo's black studio is THE art direction. R8 = black studio, B&W Tri-X, believable moments only.
+- **n29 Spatial Awareness (new):** round 1 posted. Art installations, the screen or lightbox is the artwork. Moodboard: Figma file okwzd2XQmHVL0hl4pP3zA9 section 194:1373 (strongest 191:1327, 191:1326; outside = snow, 191:1328). Props 99 lightbox, 100 CRT.
+- **n30 Low Cloud (new, Sam named it):** round 1 posted. City screens under low cloud; fog stays behind the screen. Moodboard section 194:1376, look and feel 192:1336.
 - **C11, C3, n22:** waiting on Sam's feedback.
 - **n26:** parked.
 
@@ -57,6 +59,7 @@ The board page is one large HTML file, about 3.3 MB, because the old gallery thu
 3. Publish with `url` set to the board URL, so it stays the same link. Keep its capabilities: assets, db and downloads.
 
 **Features Sam relies on, keep them working:**
+- the inspo panel keeps its scroll position on re-render (fixed 19 Oct: it used to jump to the top, so 6+ inspo images got lost)
 - columns and phases
 - the LATEST round tag
 - the workspace: pins, crosses, finals, round tabs and inspo with the "take" chips
