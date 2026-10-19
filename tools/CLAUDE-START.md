@@ -32,7 +32,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 ## Building prompts
 
 - **The builder:** `tools/build/` in `second8/inlrefs`. Clone it sparse: `git clone --depth 1 --filter=blob:none --sparse https://github.com/second8/inlrefs && git -C inlrefs sparse-checkout set tools`.
-- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r13_new.py`, n29 `n29r6_teal.py`, n30 `n30r5_candid.py`. Shots can set their own `aspect` and `format_words` (n30 r3 uses 16:9). `refs/inspo/` holds old inspo copies: never use them as Weave refs.
+- **New round file:** add `tools/build/collections3/<card>r<N>_<word>.py`. Each round file imports the previous round's `C` and changes only what the feedback asks for. Latest files: n28 `n28r14_kit.py`, n29 `n29r6_teal.py`, n30 `n30r5_candid.py`. Shots can set their own `aspect` and `format_words` (n30 r3 uses 16:9). `refs/inspo/` holds old inspo copies: never use them as Weave refs.
 - **Build:** `python3 builder3.py collections3/<file>.py` writes `out3/<id>.json`, with prompt, images and aspect per shot.
 - **New props:** register them in `assets.py` (key: path in `devices/00 Props/`, plus job text). The next prop number is 101. Sheets for Grok always start with "Do NOT run any .ps1 script." and go in a code block.
 - **Run each prompt:**
@@ -43,7 +43,7 @@ You are continuing Sam's Inlay mockup production. You (Claude) plan, write promp
 
 ## Where things stand (19 Oct)
 
-- **Credits:** about 1613 Weave credits left.
+- **Credits:** about 1588 Weave credits left.
 - **n28 Atelier:** round 13 posted (all-new moments: poster on wall, lookbook at cafe, car back seat, hand-off, cafe chair). Finals: R9 01, 02, 04, 05; R10 01, 03, 04, 05; R11 02-05; R12 01, 03, 04, 05. Sam: 'don't get lazy, new ideas, not repeating'; glass only where natural, never 'glass just to use glass'.
 - **n29 Spatial Awareness:** round 6 posted. R5 'too warm'. Look now = his inspo (Figma 193:1348 translucent box): dark gallery, black floor/walls, low grid ceiling catching cool teal-green glow, moody and imperfect; compositions rebuilt from the Figma moodboard in words. Stay on his moodboard.
 - **n30 Low Cloud:** finals: all R2, R3 01, 02, 05, all R4. Round 5 posted: same candid look, new places.
@@ -77,6 +77,7 @@ The board page is one large HTML file, about 3.3 MB, because the old gallery thu
 
 - **One look per collection:** same grade, light and world on every image of a collection. Mixed looks get rejected.
 - **HARD RULE, inspo in words only:** never pass an inspiration image (Figma, board inspo) to Weave. Describe it in words. Passed images get copied near-identically (n29 r2-01 copied his Figma ref). Only our prop, character and outfit sheets are image refs; builder3 refuses refs/inspo.
+- **RULE, be intentional (Sam 19 Oct):** every image must serve what the collection is for. Before planning, list what the collection is (e.g. n28 = mockup kit for a fashion label identity), what finals already cover, and what touchpoints are missing; each shot fills one gap. No random objects or props (n28 r7 "makes 0 sense", r13 lookbook "tf do I need a book").
 - **Tags and small print need tight crops:** the mockup surface must be big; a tag lost on a whole garment is wrong.
 
 - **Variety:** vary the object, the composition and the camera in every shot. "Same same" is his most common complaint.
