@@ -14,6 +14,7 @@ $items = @(
   @("N32 Restaurant - Weave\round 2", "n32r2-11_wine-bottle-blank-label-marble-glass.png", "https://media.weavy.ai/image/upload/v1792490749/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/uelx4jcmfiqzag6c1jrv.png"),
   @("N32 Restaurant - Weave\round 2", "n32r2-12_pastry-box-lid-marble-champagne-flute.png", "https://media.weavy.ai/image/upload/v1792490757/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/wurwnwxdrwxgzurfnmim.png"),
   @("N32 Restaurant - Weave\round 2", "n32r2-13_table-number-card-set-table-for-two-candle.png", "https://media.weavy.ai/image/upload/v1792490760/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/dlv5nfvv5bbzrzxaaehs.png"),
+  @("N32 Restaurant - Weave\round 2", "n32r2-14_coaster-marble-martini-glass-caustic.png", "https://media.weavy.ai/image/upload/v1792491068/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/eo3ugxptqpw2kirgzx7n.png"),
   @("N32 Restaurant - Weave\round 2", "n32r2-15_open-two-panel-menu-white-cloth-glass-shadows.png", "https://media.weavy.ai/image/upload/v1792490794/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/lto4glot6k9kwj0gvbtm.png"),
   @("N32 Restaurant - Weave\round 2", "n32r2-16_business-card-between-fingers-over-marble.png", "https://media.weavy.ai/image/upload/v1792490788/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/kupsssnfqxjn3lz78jzn.png"),
   @("N32 Restaurant - Weave\round 2", "n32r2-17_dessert-card-leaning-on-carafe-ivory-linen.png", "https://media.weavy.ai/image/upload/v1792490801/uploads/UIgNcQSdhvf7IEtHbILU1Ra8CZC3/asoysrejr33voxroyy2r.png"),
