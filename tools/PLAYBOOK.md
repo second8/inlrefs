@@ -48,7 +48,7 @@ The single learning place for Inlay's photographed mockups. Read this before pla
 2. **Diagnose** in 3 to 5 lines why things failed (angle, distance, light, props, sameness, AI look).
 3. **Plan** one bold line per shot: object, composition and camera all different. Say what changed from last round.
 4. **Structured Approve** (AskUserQuestion with Approve/Cancel), showing shot count and credits. Never run without it. Never rerun a failure without asking. One approval per batch, never a second cost question.
-5. **Run** each prompt on Weave (5 credits each), then poll.
+5. **Run** each prompt on Weave, then poll. Since 25 Nov the model costs **10 credits per image** (it was 5): always quote the real price.
 6. **Post** the round to the board card (rounds, a "Round N my read" thread line, `next:false`).
 7. **Download script:** `get-roundNN.ps1` to `C:\Users\38349\Desktop\01\system\` via device_commit_files; Sam runs it and clicks Sync folders.
 8. **Commit** collection files and docs to `second8/inlrefs` (`tools/`).
@@ -75,6 +75,7 @@ Avoid: <max 7 items; the builder drops extras>
 - **Always give the percent of frame** the design surface fills (45 to 85 percent is the working range).
 - **Lens language that worked:** 50mm to 135mm, f/4 to f/8, "square to the wall", camera at the height of the board's middle so verticals stay parallel.
 - **Aspect:** 4:5 default; 16:9 for wide boards and walls; mix vertical and horizontal when Sam asks.
+- **25 Nov:** all 3 prompts that passed our device or easel sheets as GitHub raw URLs failed with a "prompt" error; the 12 without images worked. Before the next ref shot, test one ref (maybe upload it with weave_upload_asset first).
 - **Content filter words to avoid:** card slot, card pad, card reader, keypad, chest, sample bag, payment words.
 - **Files:** `tools/build/collections3/<id>r<N>_<word>.py`, each round imports the last round's `C` and changes only what feedback asks for. Build with `python3 builder3.py collections3/<file>.py`.
 
