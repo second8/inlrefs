@@ -48,7 +48,7 @@ The single learning place for Inlay's photographed mockups. Read this before pla
 2. **Diagnose** in 3 to 5 lines why things failed (angle, distance, light, props, sameness, AI look).
 3. **Plan** one bold line per shot: object, composition and camera all different. Say what changed from last round.
 4. **Structured Approve** (AskUserQuestion with Approve/Cancel), showing shot count and credits. Never run without it. Never rerun a failure without asking. One approval per batch, never a second cost question.
-5. **Run** each prompt on Weave, then poll. Since 25 Nov the model costs **10 credits per image at 2K, 7 at 1K** (it was 5): always quote the real price. Sam chose 1K (7 credits) for new-collection rounds.
+5. **Run** each prompt on Weave, then poll. Since 25 Nov the model costs **10 credits per image at 2K, 7 at 1K** (it was 5): always quote the real price. Always run at **2K**: Sam tried 1K (7 credits, 928x1152) on 25 Nov and rejected it as lower quality.
 6. **Post** the round to the board card (rounds, a "Round N my read" thread line, `next:false`).
 7. **Download script:** `get-roundNN.ps1` to `C:\Users\38349\Desktop\01\system\` via device_commit_files, then Claude double-clicks `Get new mockups.bat` there through computer use (File Explorer opens on the ASUS PA279 monitor: switch_display first; Explorer is click tier, so navigate with the sidebar and double-clicks, never the address bar). Sam clicks Sync folders on the board.
 8. **Commit** collection files and docs to `second8/inlrefs` (`tools/`).
@@ -108,7 +108,7 @@ Avoid: <max 7 items; the builder drops extras>
 
 ## 8. Collection notes (Nov 2026)
 
-- **n35 Nature:** final = display on a desk in a dusk jungle ("niceeee"). Rejected: arrayed lavender rows, unrealistic wood, upright iPad, leaves, dunes. Round 2 goes wilder and more colourful (rainforest dusk, alpine meadow, poppies, volcanic pebbles, turquoise stream).
-- **n36 Terminal:** all of round 1 were finals. Keep the light, grade and finish; only change places and surfaces.
-- **n37 Night Square:** EVERY screen in frame is plain white, a crisp geometric shape, so the design can go on all of them (not one white hero among coloured screens). Good comps: tower billboard, curved corner screen, vertical tower at end of square, stacked screen grid. Ribbon bands across a facade were bad.
+- **n35 Nature:** final = display on a desk in a dusk jungle ("niceeee"). Rejected: arrayed lavender rows, unrealistic wood, upright iPad, leaves, dunes. R2 'wilder' went all over the place; Sam wants consistency. From R3 the whole collection is one world: dark tropical forest at dusk, honey-oak furniture, screen or one warm lamp as the light. iPad 'bad' twice, phone bad, pebbles and stream 'looks ai', laptop on boulder 'works, don't do more'.
+- **n36 Terminal:** all of rounds 1 and 2 were finals ('good work, do more'). Keep the light, grade and finish; only change places and surfaces.
+- **n37 Night Square:** EVERY screen in frame is plain white, a crisp geometric shape, so the design can go on all of them (not one white hero among coloured screens). Good comps: tower billboard, curved corner screen, vertical tower at end of square, stacked screen grid. Ribbon bands across a facade were bad. R2 all-white: all final, 'really nice, do more'.
 - **Board keys:** arrows, up/down and Tab / Shift+Tab step through images in the viewer.
