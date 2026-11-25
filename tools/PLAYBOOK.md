@@ -75,8 +75,8 @@ Avoid: <max 7 items; the builder drops extras>
 - **Always give the percent of frame** the design surface fills (45 to 85 percent is the working range).
 - **Lens language that worked:** 50mm to 135mm, f/4 to f/8, "square to the wall", camera at the height of the board's middle so verticals stay parallel.
 - **Aspect:** 4:5 default; 16:9 for wide boards and walls; mix vertical and horizontal when Sam asks.
-- **25 Nov:** reference images 404: the `second8/inlrefs` repo is now private, so Weave can't fetch our device and prop sheets from raw GitHub links. Prompts without images work. Fix the hosting before any shot with refs; test one link with curl first.
-- **Prices (25 Nov):** Nano Banana 2.1 is 10 credits at 2K and 7 at 1K; Nano Banana 2 Lite (id e3182874-8f56-4b8f-ae09-83677c914cf8) is 3 at 2K, quality not tested yet.
+- **25 Nov:** reference images 404: the `second8/inlrefs` repo had been made private (Sam made it public again the same day), so Weave can't fetch our device and prop sheets from raw GitHub links. Prompts without images work. Fix the hosting before any shot with refs; test one link with curl first.
+- **Prices (25 Nov):** Nano Banana 2.1 is 10 credits at 2K and 7 at 1K; Nano Banana 2 Lite (id e3182874-8f56-4b8f-ae09-83677c914cf8) is 3 credits, but even at "2K" it returns only about 1K JPGs (1376x768, 928x1152). First Lite test: n35r1-02/04/05 (-lite).
 - **Downloads without Grok:** `Desktop\01\system\Get new mockups.bat` runs the newest get-round script. Claude can double-click it through computer use (File Explorer, click tier).
 - **Content filter words to avoid:** card slot, card pad, card reader, keypad, chest, sample bag, payment words.
 - **Files:** `tools/build/collections3/<id>r<N>_<word>.py`, each round imports the last round's `C` and changes only what feedback asks for. Build with `python3 builder3.py collections3/<file>.py`.
