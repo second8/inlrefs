@@ -29,6 +29,7 @@ The single learning place for Inlay's photographed mockups. Read this before pla
 - Take the feel, light, grade and materials from inspo. Never its exact composition, props or layout ("you stole too much", C4; "comp too similar to the Figma", n32).
 
 **Props and scenes**
+- HARD RULE (Sam, 25 Nov): every object and piece of furniture comes from the repo refs (`tools/build/assets.py`: bench_oak, plinth_trav, easel_oak, display, laptop, crt, tv_lilac, pr01 wall display, gal_lightbox, shelter...). Never invent new tables or furniture; pass the ref. 'please use objects from the git repo, dont use new tables etc... always. be consistent.'
 - Every object must belong to the world and to the collection's purpose ("tf do I need a book" in a fashion set). No random or cringe props (a bill on a counter, a lone fork).
 - Vary the surface type. n32: "all things are just a card, why are you lazy." Plan different objects, not the same object in new places.
 - No packaging boxes unless asked. No curled paper corners. No dirt, no "poverty wall", nothing cheap-looking.
@@ -108,7 +109,7 @@ Avoid: <max 7 items; the builder drops extras>
 
 ## 8. Collection notes (Nov 2026)
 
-- **n35 Nature:** final = display on a desk in a dusk jungle ("niceeee"). Rejected: arrayed lavender rows, unrealistic wood, upright iPad, leaves, dunes. R2 'wilder' went all over the place; Sam wants consistency. From R3 the whole collection is one world: dark tropical forest at dusk, honey-oak furniture, screen or one warm lamp as the light. iPad 'bad' twice, phone bad, pebbles and stream 'looks ai', laptop on boulder 'works, don't do more'.
-- **n36 Terminal:** all of rounds 1 and 2 were finals ('good work, do more'). Keep the light, grade and finish; only change places and surfaces.
-- **n37 Night Square:** EVERY screen in frame is plain white, a crisp geometric shape, so the design can go on all of them (not one white hero among coloured screens). Good comps: tower billboard, curved corner screen, vertical tower at end of square, stacked screen grid. Ribbon bands across a facade were bad. R2 all-white: all final, 'really nice, do more'.
+- **n35 Nature:** final = display on a desk in a dusk jungle ("niceeee"). Rejected: arrayed lavender rows, unrealistic wood, upright iPad, leaves, dunes. R2 'wilder' went all over the place; Sam wants consistency. From R3 the whole collection is one world: dark tropical forest at dusk, honey-oak furniture, screen or one warm lamp as the light. iPad 'bad' twice, phone bad, pebbles and stream 'looks ai', laptop on boulder 'works, don't do more'. R3: display on long desk 'good' (final); TV on bench, framed poster, magazine 'bad'; lightbox X. R4 uses repo objects only.
+- **n36 Terminal:** all of rounds 1 and 2 were finals ('good work, do more'). R3: hotel travertine reception and concert foyer 'works', tiled tunnel 'good'; totem at check-in and marble lounge bar 'bad'. Keep the light, grade and finish; only change places and surfaces.
+- **n37 Night Square:** EVERY screen in frame is plain white, a crisp geometric shape, so the design can go on all of them (not one white hero among coloured screens). Good comps: tower billboard, curved corner screen, vertical tower at end of square, stacked screen grid. Ribbon bands across a facade were bad. R2 all-white: all final, 'really nice, do more'. R3 all final: bus blur over glass storefront 'amazing!!!!!!', from raised steps 'niceeeeeee', puddle reflection 'not bad'.
 - **Board keys:** arrows, up/down and Tab / Shift+Tab step through images in the viewer.
