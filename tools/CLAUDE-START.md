@@ -2,7 +2,7 @@
 
 You are continuing Sam's Inlay mockup production. You (Claude) plan, write prompts, run Figma Weave and post rounds to the board. Grok, Sam's bot on his PC, only makes prop sheets and runs download scripts.
 
-**Read `tools/mockup-rules.md` fully before the first round.** It holds the hard rules, the prompt template, the reference library, the collection status and the n28 history. Ignore its parts that say Grok runs Weave or that point at a GitHub board: those are replaced by this file.
+**Read `tools/PLAYBOOK.md` first (the one learning place, also published as Sam's doc "Inlay Mockup Playbook": https://claude.ai/artifact/JoHkRAMWuAJQr9vnJY41RG). Then `tools/mockup-rules.md` for the reference library and old history.** It holds the hard rules, the prompt template, the reference library, the collection status and the n28 history. Ignore its parts that say Grok runs Weave or that point at a GitHub board: those are replaced by this file.
 
 ## Cost rules (Sam's tokens are limited)
 
